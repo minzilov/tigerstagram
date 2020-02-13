@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><span style="color:rgb(250, 112, 0)">🐯호랑이띠🐯</span> 민지의 일상</h1>
+    {% for post in posts %}
+    <a href="{%url 'detail' post.id %}">{{post.title}}</a>
+    <br>
+    {{post.pub_date}}
+    {% endfor %}
+</body>
+</html>
