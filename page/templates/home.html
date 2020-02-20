@@ -1,9 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인페이지</title>
+    <link rel="stylesheet" href="{% static 'page/css/home.css' %}">
+    <script src="{% static 'page/js/hello.js' %}"></script>
+    <title>MAIN</title>
 </head>
 <body>
     <h1 style="text-align: center;"><span style="color:rgb(250, 112, 0)">🐯호랑이띠🐯</span> 민지의 일상</h1>
@@ -12,5 +16,9 @@
     <br>
     {{post.pub_date}}
     {% endfor %}
+    <br>
+    <input type="button" value="HELLO" onclick="hello()">
+    
+
 </body>
 </html>
